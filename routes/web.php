@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('principal');
 });
 
 Route::resource('/DifAdmin','DifAdminController');
@@ -47,4 +47,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('delete/{id}','BeneficiariosController@destroy');
 Route::get('delete/{id}','AlmacenController@destroy');
 Route::get('delete/{id}','InventarioController@destroy');
-
+Route::get('/Beneficiarios', array('uses' =>'BeneficiariosController@index', 'as' => 'beneficiarios.principal'));
+Route::get('/almacen', array('uses' =>'AlmacenController@index', 'as' => 'almacen.principal'));
+Route::get('/apvigentes', array('uses' =>'APvigentesController@index', 'as' => 'apoyos.principal'));
+Route::get('/', array('uses' =>'BeneficiariosController@mostrar', 'as' => '/'));

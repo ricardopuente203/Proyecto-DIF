@@ -9,7 +9,7 @@
     </body>
 </html> -->
 <!-- Añadido el 27-09-22 -->
-@extends('layouts.app')
+@include('layouts.app')
 @section('title','Beneficiados')
 @section('content')
      

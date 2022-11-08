@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@include('layouts.app')
 @section('title','Almacen')
 @section('content')
      

@@ -19,7 +19,11 @@ class BeneficiariosController extends Controller
         $beneficiarios=Beneficiarios::all();
         return view('index',compact('beneficiarios'));
     }
-
+    public function mostrar()
+    {
+        $beneficiarios=Beneficiarios::all();
+        return view('principal',compact('beneficiarios'));
+    }
     /**
      * Show the form for creating a new resource.
      *
