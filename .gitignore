@@ -86,3 +86,4 @@ Homestead.json
 /storage
 storage/*.key
 node_modules
+public/blog
