@@ -16,3 +16,4 @@
                 Descargar entrenadores en pdf
             </a>
         </div>   
+        @endsection

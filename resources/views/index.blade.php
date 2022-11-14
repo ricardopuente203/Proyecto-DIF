@@ -38,6 +38,8 @@
     
       <a href="beneficiarios/{{$beneficiarios->id}}"class="btn btn-secondary">
         Mostrar...</a>
+      <a href="/descargar-entrenadores{{$beneficiarios->pdf}}"class="btn btn-secondary">
+        Descargar PDF...</a>
 </form>
   </div>
 </div>

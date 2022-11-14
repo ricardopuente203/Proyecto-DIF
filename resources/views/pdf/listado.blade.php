@@ -10,8 +10,7 @@
             <th>ProgramaBeneficiado</th>
             <th>NumeroTelefono</th>
             <th>FechaAceptacion</th>
-            <th>Curp</th>
-            <th>CredencialLector</th>
+            
         </tr>
     </thead>
     <tbody>
@@ -23,9 +22,7 @@
             <td>{{$beneficiario->Domicilio}}</td>
             <td>{{$beneficiario->ProgramaBeneficiado}}</td>
             <td>{{$beneficiario->NumeroTelefono}}</td>
-            <td>{{$beneficiario->FechaAceptacion}}</td>
-            
-           
+            <td>{{$beneficiario->FechaAceptacion}}</td>           
         @endforeach
     </tbody>
 </table>
