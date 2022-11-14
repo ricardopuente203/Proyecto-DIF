@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Support\Facades\File;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use PDF;
 use App\Beneficiarios;
 
 class BeneficiariosController extends Controller
@@ -18,6 +19,12 @@ class BeneficiariosController extends Controller
     {
         $beneficiarios=Beneficiarios::all();
         return view('index',compact('beneficiarios'));
+    }
+    public function pdf()
+    {
+        $beneficiarios=Beneficiarios::all();;
+        $pdf =PDF::loadView('pdf.listado',compact('beneficiarios'));
+        return $pdf->download('listado.pdf');
     }
     public function mostrar()
     {

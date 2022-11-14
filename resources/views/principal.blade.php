@@ -10,12 +10,11 @@
     @csrf
     <div style="margin-top: 150px; margin-right: 30px;">
         <img src='images\Beneficiarios.png' class="float-left" onclick="window.location='{{ route("beneficiarios.principal") }}'">
-    </div>
-    <div style="margin-top: 150px; margin-left: 30px;">
         <img src='images\Almacen.png' class="float-left" onclick="window.location='{{ route("almacen.principal") }}'">
+        <img src='images\Avigentes.png' class="float-left" onclick="window.location='{{ route("apoyos.principal") }}'">
+        <img src='images\AgrApoyo.png' class="float-left" onclick="window.location='{{ route("agregar.principal") }}'">
     </div>
-    <div style="margin-top: 150px;">
-        <img src='images\Apoyos vigentes.png' class="float-left" onclick="window.location='{{ route("apoyos.principal") }}'">
-    </div>
-    
+   
+   
+    
 </form>
