@@ -6,8 +6,8 @@
 
     {{Form::label('','Domicilio')}}
     {{Form::text('Domicilio',null,['class'=>'form-control'])}}
-    {{Form::label('','ProgramaBeneficiario')}}
-    {{Form::text('ProgramaBeneficiario',null,['class'=>'form-control'])}}
+    {{Form::label('','ProgramaBeneficiado')}}
+    {{Form::text('ProgramaBeneficiado',null,['class'=>'form-control'])}}
     {{Form::label('','NumeroTelefono')}}
     {{Form::text('NumeroTelefono',null,['class'=>'form-control'])}}
     {{Form::label('','FechaAceptacion')}}
